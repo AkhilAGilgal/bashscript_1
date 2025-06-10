@@ -27,5 +27,20 @@ The only required utility is `timeout`, which is part of the `coreutils` package
 The script takes exactly two arguments: the target host and the port(s) to scan.
 
 **Syntax:**
-```bash
-./scan.sh <host> <ports>
+  ```bash
+  ./scan.sh <host> <ports>
+```
+
+Example 1: Scan a single port: 
+```
+./scan.sh scanme.nmap.org 80
+```
+
+Output:
+```
+Starting scan on host: scanme.nmap.org
+-----------------------------------
+Port 80: OPEN
+-----------------------------------
+Scan complete.
+```
